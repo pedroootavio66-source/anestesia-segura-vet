@@ -267,4 +267,8 @@ export const FAQ = [
     resposta:
       'Sim. O pagamento é feito online, com opções de parcelamento no cartão. Ao clicar em "Garantir minha vaga" você é direcionado para o link de pagamento do lote atual.',
   },
+  {
+    pergunta: 'Posso pagar com Pix?',
+    resposta: 'Sim. Para pagamento via Pix, entre em contato diretamente pelo WhatsApp.',
+  },
 ];
