@@ -76,7 +76,7 @@ export default function Cronograma() {
                   {dia.titulo}
                 </h3>
                 <p className="mt-1 text-sm text-mute">{dia.data}</p>
-                <ul className="mt-6 space-y-3">
+                <ul className="mt-6 grid grid-cols-1 gap-x-8 gap-y-3 sm:grid-cols-2">
                   {dia.topicos.map((topico) => (
                     <li key={topico} className="flex items-start gap-3 text-sm leading-relaxed text-mute sm:text-base">
                       <Check size={18} className="mt-0.5 shrink-0 text-teal" strokeWidth={2.5} />
