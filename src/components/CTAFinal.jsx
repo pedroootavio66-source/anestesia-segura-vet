@@ -6,7 +6,7 @@ export default function CTAFinal() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-teal-dk/25 via-navy to-navy py-24 lg:py-32">
       <div className="absolute inset-x-0 top-0">
-        <ECGLine height="h-12" opacity="opacity-20" duration="6.5s" />
+        <ECGLine height="h-12" opacity="opacity-50" duration="6.5s" />
       </div>
 
       <SectionReveal className="relative mx-auto max-w-3xl px-6 text-center lg:px-10">
