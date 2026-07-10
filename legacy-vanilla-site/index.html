@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso Avançado de Anestesiologia Veterinária | Anestesia Segura VET</title>
+  <meta name="description" content="Curso presencial intensivo de 3 dias em Anestesiologia Veterinária: teoria, prática em cadáver e pacientes vivos. Com MV. Rafael Sobrinho de Araújo, CRMV-MG 28077.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Curso Avançado de Anestesiologia Veterinária | Anestesia Segura VET">
+  <meta property="og:description" content="3 dias intensivos: teoria, prática em cadáver e pacientes vivos. Elevando a segurança anestésica na rotina clínica de pequenos animais.">
+  <meta property="og:image" content="assets/img/logo-asv-navy.jpg">
+  <meta property="og:locale" content="pt_BR">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       NAV FIXA
+  ======================================================================== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="#hero" class="nav__logo" aria-label="Anestesia Segura VET - início">
+        <svg class="nav__logo-icon" viewBox="0 0 64 64" width="34" height="34" aria-hidden="true">
+          <rect x="8" y="10" width="48" height="32" rx="4" fill="none" stroke="#C9D2E0" stroke-width="3"/>
+          <rect x="26" y="42" width="12" height="6" fill="#C9D2E0"/>
+          <rect x="20" y="49" width="24" height="4" rx="2" fill="#C9D2E0"/>
+          <polyline points="12,27 20,27 23,19 28,35 32,14 36,27 52,27" fill="none" stroke="#2BB3B3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="nav__logo-text">ASV</span>
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Navegação principal">
+        <a href="#sobre-asv">Sobre a ASV</a>
+        <a href="#curso">O Curso</a>
+        <a href="#instrutor">Instrutor</a>
+        <a href="#investimento">Investimento</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <a href="#investimento" class="btn btn--cta nav__cta" id="navCta" aria-label="Garantir vaga no curso">Garantir vaga</a>
+
+      <button class="nav__burger" id="navBurger" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       1. HERO
+  ======================================================================== -->
+  <section class="hero" id="hero">
+    <div class="hero__ecg-bg" aria-hidden="true">
+      <svg viewBox="0 0 1000 200" preserveAspectRatio="none" class="hero__ecg-svg">
+        <polyline id="heroEcgLine" points="0,100 120,100 150,100 175,40 200,160 225,20 250,100 280,100 400,100 430,100 455,40 480,160 505,20 530,100 560,100 680,100 710,100 735,40 760,160 785,20 810,100 840,100 1000,100"
+          fill="none" stroke="#2BB3B3" stroke-width="3" />
+      </svg>
+    </div>
+
+    <div class="container hero__inner">
+      <div class="hero__ring" aria-hidden="true">
+        <svg viewBox="0 0 300 300" class="hero__ring-svg">
+          <circle cx="150" cy="150" r="140" fill="none" stroke="#C9D2E0" stroke-width="1" opacity="0.12"/>
+          <line x1="150.0" y1="28.0" x2="150.0" y2="10.0" stroke="#2BB3B3" stroke-width="1.6" opacity="0.55"/>
+          <line x1="172.2" y1="23.9" x2="174.3" y2="12.1" stroke="#2BB3B3" stroke-width="1" opacity="0.22"/>
+          <line x1="193.8" y1="29.7" x2="197.9" y2="18.4" stroke="#2BB3B3" stroke-width="1" opacity="0.22"/>
+          <line x1="211.0" y1="44.3" x2="220.0" y2="28.8" stroke="#2BB3B3" stroke-width="1.6" opacity="0.55"/>
+          <line x1="232.3" y1="51.9" x2="240.0" y2="42.8" stroke="#2BB3B3" stroke-width="1" opacity="0.22"/>
+          <line x1="248.1" y1="67.7" x2="257.2" y2="60.0" stroke="#2BB3B3" stroke-width="1" opacity="0.22"/>
+          <line x1="255.7" y1="89.0" x2="271.2" y2="80.0" stroke="#2BB3B3" stroke-width="1.6" opacity="0.55"/>
+          <line x1="270.3" y1="106.2" x2="281.6" y2="102.1" stroke="#2BB3B3" stroke-width="1" opacity="0.22"/>
+          <line x1="276.1" y1="127.8" x2="287.9" y2="125.7" stroke="#2BB3B3" stroke-width="1" opacity="0.22"/>
+          <line x1="272.0" y1="150.0" x2="290.0" y2="150.0" stroke="#2BB3B3" stroke-width="1.6" opacity="0.55"/>
+          <line x1="276.1" y1="172.2" x2="287.9" y2="174.3" stroke="#2BB3B3" stroke-width="1" opacity="0.22"/>
+          <line x1="270.3" y1="193.8" x2="281.6" y2="197.9" stroke="#2BB3B3" stroke-width="1" opacity="0.22"/>
+          <line x1="255.7" y1="211.0" x2="271.2" y2="220.0" stroke="#2BB3B3" stroke-width="1.6" opacity="0.55"/>
+          <line x1="248.1" y1="232.3" x2="257.2" y2="240.0" stroke="#2BB3B3" stroke-width="1" opacity="0.22"/>
+          <line x1="232.3" y1="248.1" x2="240.0" y2="257.2" stroke="#2BB3B3" stroke-width="1" opacity="0.22"/>
+          <line x1="211.0" y1="255.7" x2="220.0" y2="271.2" stroke="#2BB3B3" stroke-width="1.6" opacity="0.55"/>
+          <line x1="193.8" y1="270.3" x2="197.9" y2="281.6" stroke="#2BB3B3" stroke-width="1" opacity="0.22"/>
+          <line x1="172.2" y1="276.1" x2="174.3" y2="287.9" stroke="#2BB3B3" stroke-width="1" opacity="0.22"/>
+          <line x1="150.0" y1="272.0" x2="150.0" y2="290.0" stroke="#2BB3B3" stroke-width="1.6" opacity="0.55"/>
+          <line x1="127.8" y1="276.1" x2="125.7" y2="287.9" stroke="#2BB3B3" stroke-width="1" opacity="0.22"/>
+          <line x1="106.2" y1="270.3" x2="102.1" y2="281.6" stroke="#2BB3B3" stroke-width="1" opacity="0.22"/>
+          <line x1="89.0" y1="255.7" x2="80.0" y2="271.2" stroke="#2BB3B3" stroke-width="1.6" opacity="0.55"/>
+          <line x1="67.7" y1="248.1" x2="60.0" y2="257.2" stroke="#2BB3B3" stroke-width="1" opacity="0.22"/>
+          <line x1="51.9" y1="232.3" x2="42.8" y2="240.0" stroke="#2BB3B3" stroke-width="1" opacity="0.22"/>
+          <line x1="44.3" y1="211.0" x2="28.8" y2="220.0" stroke="#2BB3B3" stroke-width="1.6" opacity="0.55"/>
+          <line x1="29.7" y1="193.8" x2="18.4" y2="197.9" stroke="#2BB3B3" stroke-width="1" opacity="0.22"/>
+          <line x1="23.9" y1="172.2" x2="12.1" y2="174.3" stroke="#2BB3B3" stroke-width="1" opacity="0.22"/>
+          <line x1="28.0" y1="150.0" x2="10.0" y2="150.0" stroke="#2BB3B3" stroke-width="1.6" opacity="0.55"/>
+          <line x1="23.9" y1="127.8" x2="12.1" y2="125.7" stroke="#2BB3B3" stroke-width="1" opacity="0.22"/>
+          <line x1="29.7" y1="106.2" x2="18.4" y2="102.1" stroke="#2BB3B3" stroke-width="1" opacity="0.22"/>
+          <line x1="44.3" y1="89.0" x2="28.8" y2="80.0" stroke="#2BB3B3" stroke-width="1.6" opacity="0.55"/>
+          <line x1="51.9" y1="67.7" x2="42.8" y2="60.0" stroke="#2BB3B3" stroke-width="1" opacity="0.22"/>
+          <line x1="67.7" y1="51.9" x2="60.0" y2="42.8" stroke="#2BB3B3" stroke-width="1" opacity="0.22"/>
+          <line x1="89.0" y1="44.3" x2="80.0" y2="28.8" stroke="#2BB3B3" stroke-width="1.6" opacity="0.55"/>
+          <line x1="106.2" y1="29.7" x2="102.1" y2="18.4" stroke="#2BB3B3" stroke-width="1" opacity="0.22"/>
+          <line x1="127.8" y1="23.9" x2="125.7" y2="12.1" stroke="#2BB3B3" stroke-width="1" opacity="0.22"/>
+          <circle class="hero__ring-dot" r="4.5" fill="#2BB3B3"/>
+        </svg>
+
+        <div class="hero__logo-wrap">
+          <svg class="hero__logo" viewBox="0 0 240 200" width="112" aria-hidden="true">
+            <rect x="20" y="20" width="200" height="120" rx="12" fill="none" stroke="#C9D2E0" stroke-width="6"/>
+            <rect x="105" y="140" width="30" height="20" fill="#C9D2E0"/>
+            <rect x="80" y="160" width="80" height="14" rx="6" fill="#C9D2E0"/>
+            <text x="50" y="95" font-family="Space Grotesk, sans-serif" font-size="46" font-weight="700" fill="#FFFFFF">AS</text>
+            <text x="140" y="95" font-family="Space Grotesk, sans-serif" font-size="46" font-weight="700" fill="#2BB3B3">V</text>
+            <polyline points="30,115 55,115 65,90 78,138 92,60 105,115 210,115"
+              fill="none" stroke="#2BB3B3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+
+      <p class="hero__eyebrow">ANESTESIA SEGURA VET</p>
+      <h1 class="hero__headline">Curso Avançado de<br>Anestesiologia Veterinária</h1>
+      <p class="hero__subheadline">3 dias intensivos: teoria, prática em cadáver e pacientes vivos</p>
+
+      <p class="hero__badge" id="heroBadge">
+        <!-- preenchido via JS a partir de CONFIG -->
+      </p>
+
+      <a href="#" class="btn btn--cta btn--lg" id="heroCta" aria-label="Garantir minha vaga no curso">
+        Garantir minha vaga
+      </a>
+
+      <div class="hero__guidelines" aria-label="Diretrizes científicas de referência">
+        <span>WSAVA</span>
+        <span>RECOVER</span>
+        <span>ACVAA / ECVAA</span>
+        <span>AAHA</span>
+        <span>ACVIM</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       2. SOBRE A ASV
+  ======================================================================== -->
+  <section class="section" id="sobre-asv">
+    <div class="container reveal">
+      <p class="section__eyebrow">SOBRE A ASV</p>
+      <h2 class="section__title section__title--wide">Educação de verdade para quem anestesia todos os dias</h2>
+
+      <div class="editorial">
+        <p>
+          A Anestesia Segura VET (ASV) nasceu para oferecer educação, conteúdo e mentoria a
+          médicos-veterinários que querem ir além do básico em anestesiologia.
+        </p>
+        <p>
+          Nossa missão é elevar a segurança anestésica na rotina clínica de pequenos animais,
+          unindo ciência, prática e responsabilidade com a vida do paciente.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       3. SOBRE O CURSO
+  ======================================================================== -->
+  <section class="section section--alt" id="curso">
+    <div class="container reveal">
+      <p class="section__eyebrow">O CURSO</p>
+      <h2 class="section__title">3 dias presenciais e intensivos</h2>
+      <p class="section__lead">
+        Formato presencial e imersivo, pensado para consolidar teoria e prática em sequência,
+        do raciocínio clínico até a mão na massa.
+      </p>
+
+      <div class="course-info">
+        <div class="course-info__item">
+          <span class="course-info__label">Datas</span>
+          <span class="course-info__value" id="courseDates"></span>
+        </div>
+        <div class="course-info__item">
+          <span class="course-info__label">Local</span>
+          <span class="course-info__value" id="courseLocation"></span>
+        </div>
+        <div class="course-info__item">
+          <span class="course-info__label">Vagas</span>
+          <span class="course-info__value" id="courseVagas"></span>
+        </div>
+      </div>
+
+      <!-- Tabs do cronograma -->
+      <div class="tabs" id="scheduleTabs">
+        <div class="tabs__list" role="tablist" aria-label="Cronograma do curso">
+          <button class="tabs__btn is-active" role="tab" aria-selected="true" aria-controls="tab-sexta" id="tabbtn-sexta" data-tab="sexta">
+            <span class="tabs__btn-index">01<em>/03</em></span>
+            <span class="tabs__btn-label">Sexta<small>Dia 1 · Teórico</small></span>
+          </button>
+          <button class="tabs__btn" role="tab" aria-selected="false" aria-controls="tab-sabado" id="tabbtn-sabado" data-tab="sabado">
+            <span class="tabs__btn-index">02<em>/03</em></span>
+            <span class="tabs__btn-label">Sábado<small>Dia 2 · Cadáver</small></span>
+          </button>
+          <button class="tabs__btn" role="tab" aria-selected="false" aria-controls="tab-domingo" id="tabbtn-domingo" data-tab="domingo">
+            <span class="tabs__btn-index">03<em>/03</em></span>
+            <span class="tabs__btn-label">Domingo<small>Dia 3 · Paciente vivo</small></span>
+          </button>
+        </div>
+
+        <div class="tabs__panel is-active" id="tab-sexta" role="tabpanel" aria-labelledby="tabbtn-sexta">
+          <span class="tabs__watermark" aria-hidden="true">01</span>
+          <h3>Teórico</h3>
+          <ul class="check-list">
+            <li>Fisiologia e farmacologia aplicada à anestesia</li>
+            <li>Ventilação mecânica</li>
+            <li>Bloqueios locorregionais</li>
+            <li>Manejo de pacientes especiais</li>
+            <li>RCCP / protocolo RECOVER</li>
+          </ul>
+        </div>
+
+        <div class="tabs__panel" id="tab-sabado" role="tabpanel" aria-labelledby="tabbtn-sabado" hidden>
+          <span class="tabs__watermark" aria-hidden="true">02</span>
+          <h3>Prática em cadáver</h3>
+          <ul class="check-list">
+            <li>Aplicação prática de bloqueios locorregionais</li>
+            <li>Reconhecimento anatômico guiado</li>
+            <li>Técnicas de acesso vascular e via aérea</li>
+            <li>Repetição de gesto técnico em ambiente controlado</li>
+          </ul>
+        </div>
+
+        <div class="tabs__panel" id="tab-domingo" role="tabpanel" aria-labelledby="tabbtn-domingo" hidden>
+          <span class="tabs__watermark" aria-hidden="true">03</span>
+          <h3>Prática em pacientes vivos</h3>
+          <ul class="check-list">
+            <li>Monitorização anestésica real</li>
+            <li>Condução de casos sob supervisão</li>
+            <li>Tomada de decisão em tempo real</li>
+            <li>Manejo de intercorrências</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       5. PARA QUEM É
+  ======================================================================== -->
+  <section class="section" id="para-quem">
+    <div class="container reveal">
+      <p class="section__eyebrow">PARA QUEM É</p>
+      <h2 class="section__title">Feito para colegas que atendem pequenos animais</h2>
+
+      <div class="grid grid--4">
+        <div class="card">
+          <h3>Clínico geral</h3>
+          <p>Quer mais segurança e autonomia na hora de anestesiar.</p>
+        </div>
+        <div class="card">
+          <h3>Residente</h3>
+          <p>Busca consolidar fundamentos com prática supervisionada.</p>
+        </div>
+        <div class="card">
+          <h3>Especialista</h3>
+          <p>Quer atualização com diretrizes e evidências atuais.</p>
+        </div>
+        <div class="card">
+          <h3>Estudante avançado</h3>
+          <p>Já atua em estágios e quer sair na frente na anestesiologia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       6. O QUE VOCÊ VAI DOMINAR
+  ======================================================================== -->
+  <section class="section section--alt" id="dominar">
+    <div class="container reveal">
+      <div class="split">
+        <div class="split__text">
+          <p class="section__eyebrow">O QUE VOCÊ VAI DOMINAR</p>
+          <h2 class="section__title">Da teoria à decisão clínica em tempo real</h2>
+          <ul class="check-list check-list--lg">
+            <li>Monitorização hemodinâmica avançada</li>
+            <li>Manejo de choque no paciente anestesiado</li>
+            <li>TIVA (anestesia total intravenosa) em gatos</li>
+            <li>Escalas de dor: CMPS-SF e UFEPS-SF</li>
+            <li>Bloqueios locorregionais guiados por ultrassom</li>
+            <li>Reconhecimento e manejo de emergências anestésicas</li>
+          </ul>
+          <p class="guidelines-note">
+            Conteúdo ancorado em diretrizes atuais e baseado em evidências:
+            <strong>WSAVA · RECOVER · ACVAA/ECVAA · AAHA · ACVIM</strong>
+          </p>
+        </div>
+        <div class="split__media">
+          <img src="assets/img/monitor-vitais.jpg" alt="Monitor multiparamétrico exibindo frequência cardíaca, oxigenação e capnografia em ambiente cirúrgico" loading="lazy" width="800" height="1067">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       7. SOBRE O INSTRUTOR
+  ======================================================================== -->
+  <section class="section" id="instrutor">
+    <div class="container reveal">
+      <p class="section__eyebrow">SOBRE O INSTRUTOR</p>
+      <div class="instructor">
+        <div class="instructor__photo">
+          <img src="assets/img/instrutor-retrato.jpg" alt="MV. Rafael Sobrinho de Araújo, instrutor do curso" loading="lazy" width="1200" height="1600">
+        </div>
+        <div class="instructor__bio">
+          <h2 class="instructor__name">MV. Rafael Sobrinho de Araújo</h2>
+          <p class="instructor__title">Pós-graduado em Anestesiologia Veterinária</p>
+          <p class="instructor__crmv">CRMV-MG 28077</p>
+          <p class="section__lead">
+            Especialista em anestesia de pequenos animais (cães e gatos), com atuação
+            dividida entre a rotina clínica, a educação veterinária através da ASV e a
+            produção de conteúdo técnico para colegas de profissão.
+          </p>
+          <div class="instructor__tags">
+            <span class="tag">Clínica</span>
+            <span class="tag">Educação (ASV)</span>
+            <span class="tag">Criação de conteúdo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       8. MENTORIA
+  ======================================================================== -->
+  <section class="section section--alt" id="mentoria">
+    <div class="container reveal">
+      <div class="split split--reverse">
+        <div class="split__text">
+          <p class="section__eyebrow">MENTORIA</p>
+          <h2 class="section__title">Acompanhamento contínuo além da sala de aula</h2>
+          <p class="section__lead">
+            Além do curso presencial, a ASV oferece mentoria para profissionais que querem
+            acompanhamento próximo na evolução da prática anestésica — discussão de casos,
+            dúvidas de rotina e suporte na tomada de decisão clínica.
+          </p>
+          <a href="#" class="btn btn--outline" id="mentoriaCta">Quero saber mais</a>
+        </div>
+        <div class="split__media">
+          <img src="assets/img/instrutor-clinico.jpg" alt="Instrutor da ASV em ambiente clínico, paramentado com jaleco de anestesiologia" loading="lazy" width="1200" height="1600">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       9. CONTEÚDO / REDES
+  ======================================================================== -->
+  <section class="section" id="conteudo">
+    <div class="container reveal">
+      <p class="section__eyebrow">CONTEÚDO</p>
+      <h2 class="section__title">Acompanhe a ASV nas redes</h2>
+      <p class="section__lead">
+        Carrosséis, Reels e podcast com conteúdo técnico sobre anestesiologia veterinária,
+        toda semana, direto no seu feed.
+      </p>
+      <div class="social-buttons">
+        <a href="#" class="btn btn--outline social-link" id="instaCursoLink" target="_blank" rel="noopener" aria-label="Seguir @anestesiaseguravet no Instagram">
+          @anestesiaseguravet
+        </a>
+        <a href="#" class="btn btn--outline social-link" id="instaInstrutorLink" target="_blank" rel="noopener" aria-label="Seguir @rafaelsobrinho.a no Instagram">
+          @rafaelsobrinho.a
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       10. INVESTIMENTO
+  ======================================================================== -->
+  <section class="section section--alt" id="investimento">
+    <div class="container reveal">
+      <p class="section__eyebrow">INVESTIMENTO</p>
+      <h2 class="section__title">Garanta sua vaga no lote atual</h2>
+      <p class="section__lead">18 vagas no total, divididas em 3 lotes progressivos.</p>
+
+      <div class="lotes" id="lotesContainer">
+        <!-- Cards de lote montados via JS a partir de CONFIG -->
+      </div>
+
+      <div class="included">
+        <h3>O que está incluso</h3>
+        <ul class="check-list">
+          <li>Material didático completo</li>
+          <li>Certificado de participação</li>
+          <li>Prática hands-on em cadáver e pacientes vivos</li>
+          <li>Coffee break nos 3 dias</li>
+        </ul>
+      </div>
+
+      <div class="investment-cta">
+        <a href="#" class="btn btn--cta btn--lg" id="investCta" aria-label="Garantir minha vaga agora">
+          Garantir minha vaga
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       11. DEPOIMENTOS
+  ======================================================================== -->
+  <section class="section" id="depoimentos">
+    <div class="container reveal">
+      <p class="section__eyebrow">DEPOIMENTOS</p>
+      <h2 class="section__title">Quem já passou pela ASV</h2>
+
+      <div class="grid grid--3">
+        <blockquote class="testimonial">
+          <p>“O curso mudou completamente minha segurança para conduzir casos anestésicos complexos na rotina.”</p>
+          <footer>— Depoimento de aluno (placeholder)</footer>
+        </blockquote>
+        <blockquote class="testimonial">
+          <p>“A parte prática em paciente vivo foi o diferencial. Saí de lá aplicando no dia seguinte.”</p>
+          <footer>— Depoimento de aluno (placeholder)</footer>
+        </blockquote>
+        <blockquote class="testimonial">
+          <p>“Conteúdo denso, mas muito bem conduzido. Recomendo para quem quer se especializar.”</p>
+          <footer>— Depoimento de aluno (placeholder)</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       12. FAQ
+  ======================================================================== -->
+  <section class="section section--alt" id="faq">
+    <div class="container reveal">
+      <p class="section__eyebrow">FAQ</p>
+      <h2 class="section__title">Perguntas frequentes</h2>
+
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion__item">
+          <button class="accordion__trigger" aria-expanded="false" aria-controls="faq-1">
+            Onde será o curso?
+          </button>
+          <div class="accordion__panel" id="faq-1" hidden>
+            <p>O local ainda está sendo definido e será divulgado em breve nos canais oficiais da ASV e no próprio site.</p>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <button class="accordion__trigger" aria-expanded="false" aria-controls="faq-2">
+            Quais são as datas do curso?
+          </button>
+          <div class="accordion__panel" id="faq-2" hidden>
+            <p>O curso acontece nos dias 13, 14 e 15 de novembro (sexta, sábado e domingo), em formato presencial e intensivo.</p>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <button class="accordion__trigger" aria-expanded="false" aria-controls="faq-3">
+            O que devo levar no dia?
+          </button>
+          <div class="accordion__panel" id="faq-3" hidden>
+            <p>Recomendamos jaleco ou scrub, calçado fechado, material para anotações e disposição para prática hands-on. Mais detalhes serão enviados após a inscrição.</p>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <button class="accordion__trigger" aria-expanded="false" aria-controls="faq-4">
+            Terei certificação?
+          </button>
+          <div class="accordion__panel" id="faq-4" hidden>
+            <p>Sim, todos os participantes recebem certificado de participação ao final do curso.</p>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <button class="accordion__trigger" aria-expanded="false" aria-controls="faq-5">
+            Preciso ter pré-requisitos?
+          </button>
+          <div class="accordion__panel" id="faq-5" hidden>
+            <p>O curso é voltado a médicos-veterinários e estudantes avançados de Medicina Veterinária. Não é necessário ser especialista em anestesiologia para participar.</p>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <button class="accordion__trigger" aria-expanded="false" aria-controls="faq-6">
+            Quais as formas de pagamento?
+          </button>
+          <div class="accordion__panel" id="faq-6" hidden>
+            <p>O pagamento é feito online, com opções de parcelamento no cartão. Ao clicar em "Garantir minha vaga" você é direcionado para o link de pagamento do lote atual.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       13. RODAPÉ
+  ======================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <svg class="footer__logo-icon" viewBox="0 0 64 64" width="36" height="36" aria-hidden="true">
+            <rect x="8" y="10" width="48" height="32" rx="4" fill="none" stroke="#C9D2E0" stroke-width="3"/>
+            <rect x="26" y="42" width="12" height="6" fill="#C9D2E0"/>
+            <rect x="20" y="49" width="24" height="4" rx="2" fill="#C9D2E0"/>
+            <polyline points="12,27 20,27 23,19 28,35 32,14 36,27 52,27" fill="none" stroke="#2BB3B3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>ANESTESIA SEGURA VET</span>
+        </div>
+        <a href="#" class="btn btn--cta" id="footerCta">Garantir minha vaga</a>
+      </div>
+
+      <div class="footer__socials">
+        <a href="#" id="footerInstaCurso" target="_blank" rel="noopener" aria-label="Instagram do curso @anestesiaseguravet">@anestesiaseguravet</a>
+        <a href="#" id="footerInstaInstrutor" target="_blank" rel="noopener" aria-label="Instagram pessoal do instrutor @rafaelsobrinho.a">@rafaelsobrinho.a</a>
+        <a href="#" id="footerWhats" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">WhatsApp</a>
+      </div>
+
+      <hr class="footer__divider">
+
+      <p class="footer__credentials">
+        MV. Rafael Sobrinho de Araújo — Pós-graduado em Anestesiologia Veterinária · CRMV-MG 28077
+      </p>
+      <p class="footer__copy">© <span id="footerYear"></span> Anestesia Segura VET. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       BOTÃO FLUTUANTE DE WHATSAPP
+  ======================================================================== -->
+  <a href="#" class="whatsapp-float" id="whatsappFloat" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true">
+      <path fill="#FFFFFF" d="M16 3C9 3 3.3 8.6 3.3 15.5c0 2.4.7 4.7 1.9 6.7L3 29l7-2.1c1.9 1.1 4 1.6 6 1.6 7 0 12.7-5.6 12.7-12.5S23 3 16 3zm0 22.8c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.2 1.2 1.2-4-.2-.4a10.6 10.6 0 0 1-1.7-5.7C5.4 9.7 10.1 5 16 5s10.6 4.7 10.6 10.5S21.9 25.8 16 25.8z"/>
+      <path fill="#FFFFFF" d="M21.4 18.3c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.2 3.4 5.3 4.7.7.3 1.3.5 1.8.7.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.2-.6-.4z"/>
+    </svg>
+  </a>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
